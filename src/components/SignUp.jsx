@@ -67,6 +67,13 @@ function SignUp() {
             className="btn btn-primary">SignUp</button>
         </div>
       </form>
+      {
+        user.map((items) => {
+          return (
+            <h1>{items.name}</h1>
+          )
+        })
+      }
     </div >
   )
 }
